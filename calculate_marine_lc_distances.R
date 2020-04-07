@@ -50,7 +50,7 @@ trans1 = trans.mat(bathy_data, min.depth = -10, max.depth = NULL)
 # save(trans1, file = "transition_object.RData")
 # load("transition_object.RData")
 
-# Compute least cost paths [long run time]
+# Compute least-cost paths [long run time]
 lc_paths = lc.dist(trans1, subset(coords, select = c("Lon","Lat")), res = "path")
 # save(lc_paths, file = "least_cost_paths.RData")
 # load("least_cost_paths.RData")
@@ -62,7 +62,7 @@ plot.bathy(bathy_data, image= TRUE, land = TRUE, n = 0,
                        c(min(bathy_data), 0, "royalblue")))
 lapply(lc_paths, lines, col = "orange", lwd = 2, lty = 1)
 
-# Compute least cost distances (km) matrix
+# Compute least-cost distances (km) matrix
 lc_dist = lc.dist(trans1, subset(coords, select = c("Lon","Lat")), res = "dist")
 
 # Convert to matrix, rename columns and rows, and export as csv file
