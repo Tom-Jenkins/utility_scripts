@@ -69,7 +69,7 @@ ind_coords = as.data.frame(dapc1$ind.coord)
 x = tab(geno, NA.method = "mean")
 x
 
-# Perform PCA and plot results
+# Perform PCA
 pca1 = dudi.pca(x, scannf = FALSE, scale = FALSE, nf = 3)
 pca1
 
@@ -89,7 +89,7 @@ ind_coords = as.data.frame(pca1$li)
 #
 #--------------#
 
-# Rename column of dataframe
+# Rename columns of dataframe
 colnames(ind_coords) = c("Axis1","Axis2","Axis3")
 
 # Add a column containing individuals
