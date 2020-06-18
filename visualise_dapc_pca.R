@@ -85,7 +85,7 @@ ind_coords = as.data.frame(pca1$li)
 
 #--------------#
 #
-# Visualise DAPC results
+# Visualise results
 #
 #--------------#
 
