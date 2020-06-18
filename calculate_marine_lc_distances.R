@@ -36,6 +36,8 @@ coords = data.frame(Site = site, Lat = lat, Lon = lon)
 #--------------#
 
 # Download bathymetric data
+# The higher the resolution the higher accuracy but the slower the run time
+# res = 1 is the highest resolution
 bathy_data = getNOAA.bathy(lon1 = -20, lon2 = 30, lat1 = 35, lat2 = 65, res = 4, keep = TRUE)
 summary(bathy_data)
 
