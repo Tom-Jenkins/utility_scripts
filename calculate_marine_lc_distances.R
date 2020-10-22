@@ -46,6 +46,7 @@ summary(bathy_data)
 get.depth(bathy_data, x = coords$Lon, y = coords$Lat, locator = FALSE)
 
 # Create transition object [long run time]
+# Author of marmap recommendations:
 # Use a minimum depth of -10 to avoid path crossing land masses
 # Use a maximum depth of -200 to limit paths to continental shelf
 trans1 = trans.mat(bathy_data, min.depth = -10, max.depth = NULL)
