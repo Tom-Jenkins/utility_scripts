@@ -167,7 +167,7 @@ ggplot(data = ind_coords, aes(x = Axis1, y = Axis2))+
   ggtheme
   
 # Export plot
-ggsave("Figure1.png", width = 12, height = 8, dpi = 600)
+ggsave("PCA_by_population.png", width = 12, height = 8, dpi = 600)
 
 # Scatter plot axis 1 vs. 2 [colour by region]
 ggplot(data = ind_coords, aes(x = Axis1, y = Axis2))+
@@ -188,4 +188,4 @@ ggplot(data = ind_coords, aes(x = Axis1, y = Axis2))+
   ggtheme
 
 # Export plot
-ggsave("Figure2.png", width = 12, height = 8, dpi = 600)
+ggsave("PCA_by_region.png", width = 12, height = 8, dpi = 600)
