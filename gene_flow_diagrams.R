@@ -97,7 +97,7 @@ circos.trackPlotRegion(track.index = 1,
 mtext("BayesAss", outer = FALSE, cex = 2, font = 2, line = -1)
 
 # Export figure
-# dev.copy2pdf(file ="geneflow_baysass.pdf", height = 10, width = 10)
+# dev.copy2pdf(file = "geneflow_baysass.pdf", height = 10, width = 10)
 
 
 # ----------------- #
@@ -139,7 +139,7 @@ circos.trackPlotRegion(track.index = 1,
 mtext("Migrate-n", outer = FALSE, cex = 2, font = 2, line = -1)
 
 # Export figure
-# dev.copy2pdf(file ="geneflow_migrate-n.pdf", height = 10, width = 10)
+# dev.copy2pdf(file = "geneflow_migrate-n.pdf", height = 10, width = 10)
 
 
 # ----------------- #
@@ -149,7 +149,7 @@ mtext("Migrate-n", outer = FALSE, cex = 2, font = 2, line = -1)
 # ----------------- #
 
 # Plot chord diagrams as a single figure
-# png("Eunicella_geneflow.png", width = 15, height = 10, units = "in", res = 600, type= "cairo")
+# png("Eunicella_geneflow.png", width = 15, height = 10, units = "in", res = 600, type = "cairo")
 par(mfrow=c(1,2))
 circos.clear()
 circos.par(start.degree = 90, gap.degree = 6)
